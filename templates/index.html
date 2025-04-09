@@ -1,16 +1,466 @@
-# Initialize git repository
-git init
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavandla Manohar - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
 
-# Add all files
-git add .
+    <!-- Profile Modal -->
+    <div class="profile-modal" id="profileModal">
+        <div class="profile-modal-content">
+            <span class="profile-modal-close" id="closeProfileModal">&times;</span>
+            <img src="/static/images/profile.jpg" alt="Bavandla Manohar" class="profile-modal-img">
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <span>MB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
 
-# Commit changes
-git commit -m "Initial portfolio commit"
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="profile-img">
+                <div class="profile-img-border"></div>
+            </div>
+            <h1>Bavandla Manohar</h1>
+            <p class="hero-typed"></p>
+            <p>Aspiring Data Analyst</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/manoharbavandla/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/manoharbavandla1" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:manoharbavandla123@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
 
-# Add remote repository
-git remote add origin https://github.com/manoharbavandla1/manoharbavandla1.github.io.git
+    <section id="about" class="about section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <ul class="about-list">
+              <li class="about-item" data-delay="0"><span class="emoji">🎓</span> Final-year B.Tech CSE student at <strong>Vignan Institute of Technology and Science</strong>, graduating in <strong>Aug 2025</strong>.</li>
+              <li class="about-item" data-delay="200"><span class="emoji">📊</span> Skilled in <strong>data analytics</strong> & <strong>ML</strong> with hands-on experience in <strong>Python, SQL, Power BI, and Excel</strong>.</li>
+              <li class="about-item" data-delay="400"><span class="emoji">💡</span> Built impactful projects like <strong>Crime Prediction</strong> & <strong>Fraud Detection</strong>.</li>
+              <li class="about-item" data-delay="600"><span class="emoji">🚀</span> Fast learner & <strong>team player</strong> with a growth mindset, eager to solve real-world problems using data.</li>
+            </ul>
+          </div>
 
-# Push to GitHub
-git push -u origin main
+    </section>
+
+    <section id="skills" class="skills section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill">
+                        <div class="skill-name"><i class="fab fa-python"></i> Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width:90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-database"></i> SQL</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%" style="max-width:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-chart-bar"></i> Power BI</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%" style="max-width:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-table"></i> Excel</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width:90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-brain"></i> Behavioral Skills</h3>
+                <div class="skill-bars">
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-sync-alt"></i> Adaptability</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="95%" style="max-width:95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-users"></i> Team Player</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width:90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-puzzle-piece"></i> Problem Solving</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%" style="max-width:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name"><i class="fas fa-chart-line"></i> Analytical Skills</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%" style="max-width:90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience section">
+        <h2 class="section-title">Experience & Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Data Science Intern</h3>
+                    <h4>Prodigy Infotech</h4>
+                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> 2023</p>
+                    <p>Completed projects on data visualization, EDA, and ML, including Titanic analysis and social media sentiment analysis. Applied Python, Pandas, Scikit-Learn, Matplotlib & Seaborn to extract insights and build predictive models.</p>
+                    <div class="timeline-tags">
+                        <span>Python</span>
+                        <span>Data Analysis</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>B.Tech in Computer Science</h3>
+                    <h4>Vignan Institute of Technology And Science</h4>
+                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> 2021 - 2025</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Higher Secondary Education</h3>
+                    <h4>Pragathi Jr. College, Nalgonda</h4>
+                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> 2019 - 2021</p>
+                    <p>Completed with 96%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Secondary Education</h3>
+                    <h4>Telangana State Residential School, Sarvail</h4>
+                    <p class="timeline-date"><i class="far fa-calendar-alt"></i> 2019</p>
+                    <p>Completed with a 9.3 CGPA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Predictive Crime Analytics</h3>
+                <p>Developed a machine learning-based crime prediction system aimed at enhancing public safety
+                     in 19 Indian metropolitan cities. Leveraged Random Forest Regression for predictive modeling,
+                      achieving 93.20% accuracy.</p>
+                <div class="project-tags">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fas fa-chart-bar"></i> Power BI</span>
+                    <span><i class="fas fa-brain"></i> ML</span>
+                </div>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-fingerprint"></i>
+                </div>
+                <h3>Fraud Detection System</h3>
+                <p>Designed and implemented a machine learning-based system to detect fraudulent activities within
+                    financial transactions. The model focused on accurately identifying anomalies by employing
+                    advanced techniques in data preprocessing.</p>
+                <div class="project-tags">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fas fa-table"></i> Pandas</span>
+                    <span><i class="fas fa-bolt"></i> XGBoost</span>
+                </div>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="project-card">
+                <div class="project-icon">
+                    <i class="fas fa-comment-dots"></i>
+                </div>
+                <h3>Social Media Sentiment Analysis</h3>
+                <p>Developed during my internship at Prodigy Infotech, this project analyzes sentiment from social media data to extract insights about public opinion, brand perception, and trending topics.</p>
+                <div class="project-tags">
+                    <span><i class="fab fa-python"></i> Python</span>
+                    <span><i class="fas fa-chart-line"></i> NLP</span>
+                    <span><i class="fas fa-chart-pie"></i> Visualization</span>
+                </div>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-info">
+            <p>Let's connect! Feel free to reach out through any of the following channels:</p>
+            <div class="contact-links">
+                <a href="mailto:manoharbavandla123@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                <a href="tel:+917893963625"><i class="fas fa-phone"></i> Phone</a>
+                <a href="https://www.linkedin.com/in/manoharbavandla/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/manoharbavandla1" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>MB</span>
+            </div>
+            <p>© 2023 Manohar Bavandla. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script>
+        // Custom cursor
+        const cursor = document.querySelector('.cursor');
+        const cursorDot = document.querySelector('.cursor-dot');
+
+        document.addEventListener('mousemove', function(e) {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursorDot.style.left = e.clientX + 'px';
+            cursorDot.style.top = e.clientY + 'px';
+        });
+
+        document.addEventListener('mousedown', function() {
+            cursor.style.width = '15px';
+            cursor.style.height = '15px';
+            cursorDot.style.transform = 'translate(-50%, -50%) scale(0.7)';
+        });
+
+        document.addEventListener('mouseup', function() {
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+
+        // Initialize particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#38bdf8"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#38bdf8",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                    }
+                },
+                "retina_detect": true
+            });
+        });
+
+        // Theme toggle functionality
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('light-mode');
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-moon')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        // Animate skill bars
+        const skillSection = document.querySelector('.skills');
+        const skillBars = document.querySelectorAll('.skill-per');
+
+        function showProgress(){
+            skillBars.forEach(skillBar => {
+                const value = skillBar.getAttribute('per');
+                skillBar.style.width = value;
+                skillBar.setAttribute('data-value', value);
+            });
+        }
+
+        // About section animation
+        const aboutItems = document.querySelectorAll('.about-item');
+        const aboutSection = document.querySelector('.about');
+
+        function animateAboutItems() {
+            aboutItems.forEach(item => {
+                const delay = item.getAttribute('data-delay');
+                setTimeout(() => {
+                    item.classList.add('animate');
+                }, parseInt(delay));
+            });
+        }
+
+        window.addEventListener('scroll', function(){
+            const sectionPos = skillSection.getBoundingClientRect().top;
+            const aboutPos = aboutSection.getBoundingClientRect().top;
+            const screenPos = window.innerHeight;
+
+            if(sectionPos < screenPos){
+                showProgress();
+            }
+
+            if(aboutPos < screenPos - 100){
+                animateAboutItems();
+            }
+        });
+
+        // Initial check in case sections are already in view on page load
+        setTimeout(() => {
+            if(aboutSection.getBoundingClientRect().top < window.innerHeight - 100){
+                animateAboutItems();
+            }
+
+            if(skillSection.getBoundingClientRect().top < window.innerHeight){
+                showProgress();
+            }
+        }, 500);
+    </script>
+
+    <script>
+        // Profile Modal Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileImg = document.querySelector('.profile-img');
+            const profileModal = document.getElementById('profileModal');
+            const closeProfileModal = document.getElementById('closeProfileModal');
+
+            // Open modal when clicking on profile image
+            profileImg.addEventListener('click', function() {
+                profileModal.classList.add('active');
+            });
+
+            // Close modal when clicking on close button
+            closeProfileModal.addEventListener('click', function() {
+                profileModal.classList.remove('active');
+            });
+
+            // Close modal when clicking outside the image
+            profileModal.addEventListener('click', function(e) {
+                if (e.target === profileModal) {
+                    profileModal.classList.remove('active');
+                }
+            });
+
+            // Close modal with escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && profileModal.classList.contains('active')) {
+                    profileModal.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
 
 
